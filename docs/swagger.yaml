@@ -1,0 +1,35 @@
+basePath: /v2
+host: localhost:8080
+info:
+  contact: {}
+  description: This is an example
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  title: Swaggo Example API
+  version: "1.0"
+paths:
+  /v2/pong:
+    get:
+      consumes:
+      - application/json
+      description: pong!
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "404":
+          description: Not Found
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      security:
+      - ApiKeyAuth: []
+      summary: Pong.
+swagger: "2.0"
