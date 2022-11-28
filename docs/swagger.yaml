@@ -32,4 +32,10 @@ paths:
       security:
       - ApiKeyAuth: []
       summary: Pong.
+securityDefinitions:
+  ApiKeyAuth:
+    description: Accesskey based security scheme to secure api
+    in: header
+    name: Bearer
+    type: apiKey
 swagger: "2.0"

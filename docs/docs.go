@@ -57,6 +57,14 @@ const docTemplate = `{
                 }
             }
         }
+    },
+    "securityDefinitions": {
+        "ApiKeyAuth": {
+            "description": "Accesskey based security scheme to secure api",
+            "type": "apiKey",
+            "name": "Bearer",
+            "in": "header"
+        }
     }
 }`
 
